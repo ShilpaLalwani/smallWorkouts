@@ -5,10 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <title>Small Workouts</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/parallex.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link href="assets/base.css" rel="stylesheet">
+        <link href="assets/aos.css" rel="stylesheet">
+        
     </head>
     <body>
         <div >
@@ -31,15 +35,16 @@
                           </nav>
                     </div>
                 </div>
-                <div class="fitness-header">
+                <div data-aos="fade-up" class="fitness-header">
                     <h1>Make fitness easy.</h1>
                     <p class="subText">We offer online training solutions that work for everybody.</p>
                 </div>
             </div>
+            <!-- fadeInLeft --> 
             <div class="body-text content-text">
                 <div class="row" >
                     <div class="offset-1 col-lg-5">
-                        <div class="fadeInLeft text-black" data-block-type="2" style="visibility: visible; animation-name: fadeInLeft;">
+                        <div data-aos="fade-right" class="text-black">
                             <h1 class="text-black">Small Workouts</h1>
                             <h2 class="text-black">is High Intensity Circuit Training</h2>
                             <h3 class="text-black">that is accessible to everyone anywhere through a laptop, tablet or phone.&nbsp;<br>Using only bodyweight exercise, functional movement and calisthenics,&nbsp;<br>all workouts are done in the comfort of your own home.</h3>
@@ -47,7 +52,7 @@
                         </div>
                     </div>  
                     <div class="col-lg-5">
-                        <div class="image-block fadeInRight">
+                        <div data-aos="fade-left" class="image-block">
                             <div style="max-width:2160.0px;">
                   
                                 <div style="padding-bottom: 66.6667%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" >
@@ -60,15 +65,17 @@
                 </div>    
             </div>
             <div class="parallax-container2" data-parallax="scroll" data-position="bottom" data-image-src="https://static1.squarespace.com/static/54525c52e4b05448e491e7ea/t/5aaaa4428a922d25dadee146/1522959423955/Faris-Exercise--3556.jpg" data-natural-width="1200" data-natural-height="700">
-                <div class="row">
+                <div class="row p-t-10">
                         
                     <div class="offset-2 col-lg-8">
-                        
-                            <h1>Fast and easy <br> workouts</h1>
-                            <p>The workouts are free, all under 10 minutes and no equipment is needed. </p>
-                            <p class="p-b-35">You’ll quickly see why you don’t need to spend all day in the gym to get fit.</p>
-                            <button class="button1" type="button" class="btn btn-primary">Watch Videos</button>
-                       
+                            <div data-aos="fade-right">
+                                <h1>Fast and easy <br> workouts</h1>
+                                <p class="text-white">The workouts are free, all under 10 minutes and no equipment is needed. </p>
+                                <p class="p-b-35 text-white">You’ll quickly see why you don’t need to spend all day in the gym to get fit.</p>
+                            </div>
+                            <div data-aos="fade-up">
+                                <button class="button1" type="button" class="btn btn-primary">Watch Videos</button>
+                            </div>
                     </div> 
                 
                 </div>
@@ -77,13 +84,15 @@
             <div class="content-text">
                     <div class="row" >
                         <div class="offset-2 col-lg-5">
-                            <div class="fadeInLeft" data-block-type="2" style="visibility: visible; animation-name: fadeInLeft;">
+                            <div data-aos="fade-right" data-block-type="2">
                                 <h1 class="text-black">It’s perfect<br>for beginners</h1>
                                 <h3 class="text-black p-b-50">those who hate the gym or people just short on time<br>to get in great shape and lose weight.<br></h3>
+                            </div>
+                            <div data-aos="fade-up">
                                 <button class="button1" type="button" class="btn btn-primary">Discover More</button>
                             </div>
                         </div>  
-                        <div class="col-lg-3">
+                        <div data-aos="fade-left" class="col-lg-3">
                            <h3 class="text-black">With Sean’s workouts, I can thoroughly exercise my<br>body to a level very similar to the intensity I achieve at my home gym.&nbsp;</h3>
                            <h3 class="text-black"><strong>— Sean's Customer</strong></h3> 
                         </div>
@@ -93,12 +102,16 @@
         <footer class="width-100 text-left">
             <div class="footer-inner row">
                 <div class="col-lg-7">
-                    <h1>Don't be a stranger</h1><h1>anymore.&nbsp;</h1>
-                    <h3>Workout under the watchful eye of Sean Faris, the Small Workouts Guy.<br>&nbsp;</h3>
-                    <h1>—</h1>
-                    <button class="button" type="button" class="btn btn-primary">Join Today</button>
+                    <div data-aos="fade-up">
+                        <h1>Don't be a stranger</h1><h1>anymore.&nbsp;</h1>
+                        <h3>Workout under the watchful eye of Sean Faris, the Small Workouts Guy.<br>&nbsp;</h3>
+                        <h1>—</h1>
+                    </div>
+                    <div data-aos="fade-right">
+                        <button class="button" type="button" class="btn btn-primary">Join Today</button>
+                    </div> 
                 </div>
-                <div class="col-lg-5 width-100"  >
+                <div data-aos="fade-left" class="col-lg-5 width-100"  >
 
                     <form method="get" action="#">
                         <h2 class="newsletter-form-header-title">Subscribe</h2>
@@ -114,5 +127,14 @@
 
             </nav>   
         </footer>
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+             duration: 1200
+            });
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+        </script>
     </body>
 </html>
