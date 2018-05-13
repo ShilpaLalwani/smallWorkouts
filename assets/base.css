@@ -282,3 +282,39 @@ footer h2{
         font-size: 1.8rem;
     }
 }
+#preload {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hsContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#slide-1 .bcg {background-image:url('https://static1.squarespace.com/static/54525c52e4b05448e491e7ea/t/5aba6ad070a6adbe9b8678fa/1522959385791/Faris-Exercise--3585_v2.jpg')}
+#slide-1 .hsContent {
+    bottom: 200px;
+    top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('https://static1.squarespace.com/static/54525c52e4b05448e491e7ea/t/5aaaa4428a922d25dadee146/1522959423955/Faris-Exercise--3556.jpg')}
+#slide-2 .hsContent {
+    margin-left: -450px;
+    bottom: 200px;
+    top: auto;
+}
