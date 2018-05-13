@@ -26,7 +26,7 @@ h1{
     font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 70px;
+    font-size: 4rem;
     letter-spacing: 0em;
     line-height: 1em;
     text-transform: none;
@@ -36,7 +36,7 @@ h2{
     font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 52px;
+    font-size: 3.2rem;
     letter-spacing: .02em;
     line-height: 1.2em;
     text-transform: none;
@@ -46,7 +46,7 @@ h3{
     font-family: sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 21px;
+    font-size: 1.4rem;
     letter-spacing: .04em;
 }
 
@@ -71,7 +71,7 @@ h3{
     font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: .08em;
     text-transform: uppercase;
     margin: 0 1.13rem;
@@ -88,7 +88,7 @@ h3{
 .subText {
     font-weight: 400;
     font-style: normal;
-    font-size: 21px;
+    font-size: 1.4rem;
     letter-spacing: .04em;
     color: white;
     text-transform: none;
@@ -108,26 +108,27 @@ footer form{
     position: relative;
 }
 footer form input{
-    display: block;
     box-sizing: border-box;
     font: inherit;
     font-size: 14px;
     font-weight: normal;
     color: #32383A;
+    height: 70px;
+    width: 70%;
+    border-radius: 10px;
     padding: 18px 50px 18px 18px;
     outline: none;
     border: 1px solid #e0e0e0;
-    border-radius: 2px;
     box-shadow: 0 1px 1px #eee;
 }
 footer form input::-webkit-input-placeholder {
     color:  #5c666b;
 }
 footer h1{
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 footer h2{
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 .text-black{
     color: black;
@@ -138,7 +139,7 @@ footer h2{
     font-family: sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 19px;
+    font-size: 1.1rem;
     letter-spacing: .07em;
     line-height: 1em;
     text-transform: uppercase;
@@ -146,7 +147,7 @@ footer h2{
 .button{
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.1rem;
     border-radius: 33px;
     padding: 21px 34px;
     letter-spacing: .07em;
@@ -159,7 +160,7 @@ footer h2{
 .button1{
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 33px;
     padding: 15px 25px;
     letter-spacing: .07em;
@@ -170,11 +171,11 @@ footer h2{
     border-color: #3944d5;
 }
 .parallax-container {
-  height: 44rem;
+  height: 44rem !important;
   width: 100%;
 }
 .parallax-container2 {
-  height: 76rem;
+  height: 46rem;
   width: 100%;
 }
 .p-b-35{
@@ -187,15 +188,97 @@ footer h2{
     opacity: .8;
     margin: 17px 0;
     padding: 0;
-    font-size: 12px !important;
+    font-size: .8rem !important;
     line-height: normal;
 }
 .p-t-10{
     padding-top: 10rem;
+}
+.p-b-20{
+    padding-bottom: 20px;
+}
+.p-lr-10{
+    padding: 0 10px;
+}
+.p-lr-20{
+    padding: 0 20px;
 }
 .text-white{
     color: white;
 }
 .fitness-header{
     padding: 10rem;
+}
+.subscribe{
+    background-color: #1d2530;
+    border: none;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 3px 2px 80px #171e26;
+}
+.sign-up-button{
+    border-radius: 10px;
+    color: #3b4ad2;
+    background-color: #fcfcfd;
+    border: 1px solid #272727 !important;
+    height: 70px;
+    width: 28%;
+    display: inline-block;
+}
+.menu{
+    font-size: 1.8rem;
+    border: none!important;
+}
+.text-yellow{
+    color: #fc0;
+}
+.nav-item a:hover{
+    text-decoration: none;
+     color: white;
+}
+.navbar-nav:hover .nav-item{
+  opacity:0.5;
+}
+.navbar-nav .nav-item:hover{
+  opacity:1;
+}
+.nav-yellow-item a:hover {
+    color: rgba(255,204,0,.4);
+    text-decoration: none;
+}
+@media (max-width: 768px){
+    .content-text{
+        padding: 2rem 2rem;
+     }
+    .fitness-header{
+        padding: 2rem;
+    }
+    .p-xs-t-35{
+        padding-top: 35px;
+    }
+    .p-xs-t-50{
+        padding-top: 50px;
+    }
+    .footer-inner{
+        padding: 0;
+    }
+    footer{
+        padding: 30px 20px;
+    }
+    .subscribe{
+       border:10px solid #3944d5;
+    }
+    .header-right{
+        padding: 1rem;
+    }
+    .header{
+        padding: 0;
+        background-color: rgb(71, 90, 204);
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
 }
